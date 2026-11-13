@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CaaCode — Desenvolvimento de Software e Security</title>
+  <meta name="description" content="CaaCode: software sob medida e segurança da informação para empresas. Atendimento direto, DevSecOps, code review de segurança e adequação à LGPD.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314201a'/%3E%3Cpath d='M16 5v22M16 14h-5V9M16 18h5v-6' stroke='%237bc47f' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#topo" class="logo" aria-label="CaaCode — início">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" />
+          <path d="M16 5v22M16 14h-5V9M16 18h5v-6" />
+        </svg>
+        <span class="logo__text">Caa<strong>Code</strong></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#desafios">Desafios</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#security">Security</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato" class="btn btn--sm">Fale conosco</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">Software house B2B · Desenvolvimento & Security</span>
+          <h1>Software que <em>resiste</em> a qualquer ambiente.</h1>
+          <p class="hero__lead">
+            Assim como a caatinga, construímos sistemas feitos para durar: robustos, seguros e
+            adaptáveis. Desenvolvemos software sob medida com segurança desde a primeira linha de código.
+          </p>
+          <div class="hero__ctas">
+            <a href="#contato" class="btn">Solicite um orçamento</a>
+            <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+          </div>
+          <ul class="hero__badges">
+            <li>Secure by design</li>
+            <li>Contato direto com quem desenvolve</li>
+            <li>Adequação à LGPD</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar"><i></i><i></i><i></i><span>caacode@deploy:~</span></div>
+            <pre class="terminal__body"><code><span class="t-muted">$</span> caacode build --secure
+<span class="t-ok">✔</span> testes unitários ........ 412 passaram
+<span class="t-ok">✔</span> SAST / análise estática .. 0 críticos
+<span class="t-ok">✔</span> dependências (SCA) ...... sem CVEs
+<span class="t-ok">✔</span> secrets scan ............ limpo
+<span class="t-ok">✔</span> container hardening ..... aprovado
+<span class="t-warn">→</span> deploy em produção<span class="cursor">▍</span></code></pre>
+          </div>
+          <svg class="cactus" viewBox="0 0 200 260">
+            <path d="M100 250V40a18 18 0 0 1 36 0v70h14V80a14 14 0 0 1 28 0v50a20 20 0 0 1-20 20h-22v100M100 160H74a20 20 0 0 1-20-20V100a14 14 0 0 1 28 0v30h18" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SETORES (prova social) ============ -->
+    <section class="sectors">
+      <div class="container">
+        <p class="sectors__title">Software sob medida para empresas de qualquer setor, como</p>
+        <ul class="sectors__list">
+          <li>Fintechs</li><li>Saúde</li><li>Agronegócio</li><li>Varejo</li>
+          <li>Logística</li><li>Educação</li><li>Energia</li><li>Setor público</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ DESAFIOS ============ -->
+    <section class="section" id="desafios">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Desafios</span>
+          <h2>Quais desafios tecnológicos estão travando o seu negócio?</h2>
+          <p>Com um parceiro estratégico, cada gargalo vira oportunidade de evoluir.</p>
+        </header>
+
+        <div class="cards cards--3">
+          <article class="card">
+            <div class="card__icon">⏱</div>
+            <h3>Prazos e escopo sem clareza</h3>
+            <p>Projetos que nunca terminam e orçamentos que só crescem. Trabalhamos com escopo, marcos e custos previsíveis.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">👥</div>
+            <h3>Fornecedores sem rosto</h3>
+            <p>Gerentes de conta, repasses e telefone sem fim. Aqui você fala direto com quem escreve o código.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🛡</div>
+            <h3>Vulnerabilidades e incidentes</h3>
+            <p>Vazamentos custam caro em dinheiro e reputação. Revisamos o código e o pipeline para encontrar falhas antes que virem problema.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🔗</div>
+            <h3>Sistemas legados e integrações</h3>
+            <p>Plataformas antigas que ninguém quer tocar. Modernizamos e integramos sem parar a sua operação.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">📈</div>
+            <h3>Backlog acumulado</h3>
+            <p>Demandas paradas por falta de braço? Assumimos entregas pontuais sem você precisar contratar.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">⚖</div>
+            <h3>Compliance e LGPD</h3>
+            <p>Auditorias e requisitos regulatórios. Ajudamos a mapear dados, ajustar processos e documentar controles.</p>
+          </article>
+        </div>
+
+        <div class="center"><a href="#contato" class="btn">Quero saber mais</a></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Desenvolvimento</span>
+          <h2>Software sob medida, do discovery à sustentação</h2>
+          <p>Entregamos produtos web, mobile e integrações com engenharia de qualidade e foco no resultado do seu negócio.</p>
+        </header>
+
+        <div class="cards cards--4">
+          <article class="card card--service">
+            <span class="card__num">01</span>
+            <h3>Sistemas web</h3>
+            <p>Plataformas, portais e SaaS escaláveis com arquitetura moderna e cloud-native.</p>
+          </article>
+          <article class="card card--service">
+            <span class="card__num">02</span>
+            <h3>Apps mobile</h3>
+            <p>Aplicativos Android e iOS nativos ou multiplataforma, com UX pensada para o usuário final.</p>
+          </article>
+          <article class="card card--service">
+            <span class="card__num">03</span>
+            <h3>APIs & integrações</h3>
+            <p>Conectamos ERPs, CRMs, meios de pagamento e serviços de terceiros com segurança.</p>
+          </article>
+          <article class="card card--service">
+            <span class="card__num">04</span>
+            <h3>Sustentação & evolução</h3>
+            <p>Manutenção, correções e novas funcionalidades em contrato mensal, para sistemas novos ou existentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECURITY ============ -->
+    <section class="section section--dark" id="security">
+      <div class="container security__grid">
+        <div>
+          <span class="eyebrow eyebrow--light">Security</span>
+          <h2>Segurança não é etapa final. É fundação.</h2>
+          <p class="lead">
+            Práticas de segurança integradas ao dia a dia do desenvolvimento, tanto no software
+            que construímos quanto nos sistemas que você já tem em produção.
+          </p>
+          <a href="#contato" class="btn">Fale sobre a segurança do seu sistema</a>
+        </div>
+
+        <ul class="sec-list">
+          <li>
+            <h3>DevSecOps</h3>
+            <p>Verificações automáticas de segurança no seu pipeline de CI/CD: análise estática, dependências vulneráveis e scan de secrets.</p>
+          </li>
+          <li>
+            <h3>Code review de segurança</h3>
+            <p>Revisão do seu código em busca de falhas comuns, com base no OWASP Top 10, e recomendações práticas de correção.</p>
+          </li>
+          <li>
+            <h3>LGPD & compliance</h3>
+            <p>Mapeamento dos dados pessoais tratados pelo sistema e implementação dos controles técnicos para adequação à LGPD.</p>
+          </li>
+          <li>
+            <h3>Resposta a incidentes</h3>
+            <p>Disponibilidade para agir rápido quando algo dá errado: conter o problema, identificar a causa e corrigir.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="section" id="processo">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Um processo ágil, transparente e seguro</h2>
+          <p>Etapas claras, entregas frequentes e você acompanhando tudo de perto.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Discovery</h3>
+            <p>Entendemos o negócio, os usuários e os riscos. Definimos escopo, prioridades e métricas de sucesso.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Arquitetura & threat modeling</h3>
+            <p>Desenhamos a solução e mapeamos ameaças antes de escrever a primeira linha.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Desenvolvimento em sprints</h3>
+            <p>Entregas a cada 2 semanas, com demos, testes automatizados e verificações de segurança no pipeline.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <h3>Validação & go-live</h3>
+            <p>Testes, revisão de segurança e homologação com o seu time. Deploy controlado e monitorado.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">5</span>
+            <h3>Sustentação</h3>
+            <p>Monitoramento, correções, evolução contínua e SLA definido em contrato.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ POR QUE ============ -->
+    <section class="section section--alt" id="porque">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow">Por que a CaaCode?</span>
+          <h2>Enxuta de propósito</h2>
+          <p>Nascida no sertão, onde só sobrevive o que é bem construído. Sem camadas de gerência, sem repasse: atenção total ao seu projeto.</p>
+        </header>
+
+        <div class="cards cards--4">
+          <article class="card card--plain">
+            <h3>Contato direto</h3>
+            <p>Quem conversa com você é quem desenvolve. Decisões rápidas e nada se perde no caminho.</p>
+          </article>
+          <article class="card card--plain">
+            <h3>Transparência</h3>
+            <p>Relatórios ágeis, acesso ao board e às métricas. Sem caixa-preta sobre prazo e custo.</p>
+          </article>
+          <article class="card card--plain">
+            <h3>Segurança</h3>
+            <p>Práticas de AppSec em todo o ciclo de vida, NDA e controle de acesso aos seus dados.</p>
+          </article>
+          <article class="card card--plain">
+            <h3>Custo justo</h3>
+            <p>Estrutura enxuta, sem overhead de agência. Você paga pelo que é entregue.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <span class="eyebrow">Contato</span>
+          <h2>Da ideia à solução segura. Vamos conversar?</h2>
+          <p>Conte um pouco sobre o seu projeto. Você recebe retorno em até 1 dia útil, direto de quem vai desenvolver.</p>
+          <ul class="checklist">
+            <li>Redução de custos operacionais</li>
+            <li>Backlog sob controle</li>
+            <li>Entregas previsíveis</li>
+            <li>Riscos de segurança mapeados</li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <label>Nome*<input type="text" name="nome" required autocomplete="name"></label>
+            <label>E-mail corporativo*<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <div class="form__row">
+            <label>Telefone*<input type="tel" name="telefone" required autocomplete="tel" placeholder="(00) 00000-0000"></label>
+            <label>Empresa*<input type="text" name="empresa" required autocomplete="organization"></label>
+          </div>
+          <div class="form__row">
+            <label>Tamanho da empresa
+              <select name="tamanho">
+                <option value="">Selecione</option>
+                <option>1 a 10 colaboradores</option>
+                <option>11 a 50 colaboradores</option>
+                <option>51 a 200 colaboradores</option>
+                <option>Mais de 200 colaboradores</option>
+              </select>
+            </label>
+            <label>Interesse principal
+              <select name="interesse">
+                <option value="">Selecione</option>
+                <option>Desenvolvimento de software</option>
+                <option>Manutenção / sustentação</option>
+                <option>Code review de segurança</option>
+                <option>DevSecOps</option>
+                <option>LGPD / compliance</option>
+                <option>Resposta a incidente</option>
+                <option>Outro</option>
+              </select>
+            </label>
+          </div>
+          <label>Conte sobre o seu projeto*
+            <textarea name="mensagem" rows="4" required></textarea>
+          </label>
+          <label class="form__check">
+            <input type="checkbox" name="lgpd" required>
+            <span>Concordo com o tratamento dos meus dados para fins de contato, conforme a LGPD.</span>
+          </label>
+          <button type="submit" class="btn btn--full">Enviar</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Perguntas frequentes</h2>
+        </header>
+
+        <div class="faq">
+          <details>
+            <summary>Como vocês definem prazos e custos?</summary>
+            <p>Após o discovery, entregamos uma proposta com escopo, marcos e estimativa. Em demandas contínuas, trabalhamos com contrato mensal de horas e custo fixo.</p>
+          </details>
+          <details>
+            <summary>A CaaCode é uma empresa pequena. E se o projeto for grande?</summary>
+            <p>Ser enxuta é o que permite atenção total e custo justo. Antes de fechar, avaliamos com honestidade se o escopo cabe na nossa capacidade e definimos um cronograma realista. Se não couber, dizemos isso logo no início.</p>
+          </details>
+          <details>
+            <summary>E se o escopo mudar no meio do projeto?</summary>
+            <p>Mudanças fazem parte. Reprioritizamos o backlog a cada sprint junto com você e mostramos o impacto de cada mudança em prazo e custo antes de seguir.</p>
+          </details>
+          <details>
+            <summary>Vocês modernizam sistemas legados?</summary>
+            <p>Sim. Fazemos diagnóstico técnico e de segurança, e migramos por etapas para não interromper a operação.</p>
+          </details>
+          <details>
+            <summary>Vocês revisam a segurança de sistemas feitos por outros fornecedores?</summary>
+            <p>Sim. Com acesso ao código e autorização da sua empresa, fazemos o code review de segurança e apontamos o que precisa ser corrigido, por ordem de prioridade.</p>
+          </details>
+          <details>
+            <summary>Como vocês protegem os dados e o código da minha empresa?</summary>
+            <p>Assinamos NDA, usamos acesso com menor privilégio, MFA, ambientes segregados e seguimos a LGPD em todo o tratamento de dados.</p>
+          </details>
+          <details>
+            <summary>Atendem empresas de fora do Nordeste?</summary>
+            <p>Sim. Trabalhamos de forma remota com clientes de todo o Brasil e do exterior.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta-final">
+      <div class="container">
+        <h2>Não importa o tamanho do seu gargalo. A gente resolve.</h2>
+        <a href="#contato" class="btn btn--light">Vamos discutir seu projeto?</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#topo" class="logo logo--footer">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" />
+          <path d="M16 5v22M16 14h-5V9M16 18h5v-6" />
+        </svg>
+        <span class="logo__text">Caa<strong>Code</strong></span>
+      </a>
+      <p>Desenvolvimento de Software e Security</p>
+      <p class="footer__legal">© <span id="year"></span> CaaCode · CNPJ 00.000.000/0001-00</p>
+    </div>
+  </footer>
+
+  <!-- ============ COOKIES ============ -->
+  <div class="cookie" id="cookie" hidden>
+    <p>Usamos cookies para melhorar sua experiência. Saiba mais na nossa política de privacidade.</p>
+    <div>
+      <button class="btn btn--sm btn--ghost" data-cookie="recusar">Recusar</button>
+      <button class="btn btn--sm" data-cookie="aceitar">Aceitar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
